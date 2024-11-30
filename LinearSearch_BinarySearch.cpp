@@ -2,7 +2,6 @@
 using namespace std;
 int linearSearch(vector<string>arr,string target){
     for(int i=0;i<arr.size();i++){
-        cout<<"Sohan"<<endl;
         if(arr[i]==target){
             return i;
         }
@@ -38,12 +37,12 @@ int main(){
     auto start=chrono::high_resolution_clock::now();
     int linearResult=linearSearch(arr,target);
     auto end=chrono::high_resolution_clock::now();
-    cout<<"Linear search time :"<<chrono::duration_cast<chrono::microseconds>(end-start).count()<<"microseconds"<<endl;
+    cout<<"Linear search time :"<<chrono::duration_cast<chrono::microseconds>(end-start).count()<<" microseconds"<<endl;
     
     start=chrono::high_resolution_clock::now();
     int binaryResult=binarySearch(arr,target);
     //sort(arr.begin(),arr.end());
      end=chrono::high_resolution_clock::now();
-    cout<<"Binary search time :"<<chrono::duration_cast<chrono::microseconds>(end-start).count()<<"microseconds"<<endl;
+    cout<<"Binary search time :"<<chrono::duration_cast<chrono::microseconds>(end-start).count()<<" microseconds"<<endl;
     return 0;
 }
