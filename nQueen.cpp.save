@@ -1,0 +1,1 @@
+cd "/home/sohan/CPP_VS_Code/Algorithm-Lab/" && g++ nQueen.cpp -o nQueen && "/home/sohan/
